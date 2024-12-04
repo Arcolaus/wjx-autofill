@@ -149,6 +149,9 @@
         // 点击按钮时填写问卷
         button.onclick = () => {
             getQuestionDiv("div.field.ui-field-contain");
+            setTimeout(() => {
+                document.querySelector("#ctlNext").click();
+            }, 1000);
         };
     };
 })();
